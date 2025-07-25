@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SEO Analyzer Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 SEO Analyzer</h1>
+    <input type="text" id="urlInput" placeholder="Enter a website URL">
+    <button onclick="analyzeSEO()">Analyze</button>
+    <div id="results"></div>
+    <input type="email" id="emailInput" placeholder="Client's Email">
+    <button onclick="sendEmail()">Send Report via Email</button>
+    <hr>
+     <h2>📂 Client Audit History</h2>
+     <input type="email" id="historyEmail" placeholder="Enter client email">
+     <button onclick="loadHistory()">Load History</button>
+     <div id="auditHistory"></div>
+
+    <button onclick="downloadPDF()">Download Report as PDF</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <canvas id="seoChart" width="300" height="300" style="display:none; margin-top: 20px;"></canvas>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>
